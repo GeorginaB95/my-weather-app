@@ -12,24 +12,28 @@
     />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://kit.fontawesome.com/e9a3f79448.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
       <div class="my-weather-app">
-      <h1> <i class="fas fa-map-marker-alt"></i> London</h1>
-      <ul class="now">
+      <h1> 
+        <i class="fas fa-map-marker-alt"></i>
+        <span id="city"></span>
+      </h1>
+      <ul>
         <li>
           Saturday 1st April 18:48
         </li>
-        <li>
+        <li id="description">
           Clear
         </li>
       </ul>
       <div class="row current-weather">
         <div class="col-6">
           <img src="https://img.icons8.com/dusk/2x/sun.png" alt="Sunny" class="weather-icon"/>
-         <span id="current-temperature"> 12</span>
+         <span id="current-temperature"></span>
          <span id="units"> ˚C | 
            <a href="#">˚F </a> 
           </span>
@@ -40,10 +44,12 @@
                 Precipitation: 0%
               </li>
               <li>
-                Humidity: 0%
+                Humidity: 
+                <span id="humidity"></span>%
               </li>
               <li>
-                Wind: 2km/h
+                Wind:
+                <span id="wind"></span> km/h
               </li>
             </ul>
           </div>

@@ -20,9 +20,10 @@ h1 {
   max-height: 70px;
 }
 
-.now {
+ul {
   color: #8e6e9f;
   list-style-type: none;
+  text-transform: capitalize;
 }
 
 .current-weather {

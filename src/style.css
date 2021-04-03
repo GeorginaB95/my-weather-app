@@ -23,6 +23,9 @@ h1 {
 ul {
   color: #8e6e9f;
   list-style-type: none;
+}
+
+li:first-letter {
   text-transform: capitalize;
 }
 

@@ -1,1 +1,55 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.my-weather-app {
+  background-color: #ebf3ef;
+  border: 1px solid #997da9;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+h1 {
+  color: #997da9;
+  font-size: 40px;
+  margin-bottom: 0px;
+  padding: 20px 30px 5px 30px;
+}
+.weather-icon {
+  margin-right: 5px;
+  max-width: 70px;
+  max-height: 70px;
+}
 
+.now {
+  color: #8e6e9f;
+  list-style-type: none;
+}
+
+.current-weather {
+  color: #8e6e9f;
+  margin-left: 30px;
+}
+
+#current-temperature {
+  font-size: 40px;
+  line-height: 20px;
+  position: relative;
+  top: 10px;
+}
+
+#units {
+  position: relative;
+  top: -8px;
+}
+
+.current-weather-details {
+  list-style-type: none;
+  color: #997da9;
+  font-size: 15px;
+}
+
+.footer {
+  color: #8e6e9f;
+  display: block;
+  text-align: center;
+}

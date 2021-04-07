@@ -31,10 +31,16 @@ function displayTemperature(response){
    iconElement.setAttribute ("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
    iconElement.setAttribute ("alt", response.data.weather[0].description);
 }
+
 let apiKey="d8db460d456f3ec32826f6858578adce";
 let units="metric";
 let city = "London";
 let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
 axios.get(apiUrl).then(displayTemperature);
+
+
+
+
+
 

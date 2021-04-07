@@ -22,7 +22,8 @@ function displayTemperature(response){
    let windElement = document.querySelector("#wind");
    let dateElement = document.querySelector("#date");
    let iconElement = document.querySelector("#icon");
-   temperatureElement.innerHTML=Math.round(response.data.main.temp);
+   tempC = response.data.main.temp;
+   temperatureElement.innerHTML=Math.round(tempC);
    cityElement.innerHTML = response.data.name;
    descriptionElement.innerHTML = response.data.weather[0].description;
    humidityElement.innerHTML = response.data.main.humidity;
@@ -45,11 +46,30 @@ function submitCity(event){
     search(cityInputElement.value);
 }
 
+function displayTempF(event){
+    event.preventDefault();
+    let tempF = (tempC * 9) / 5 + 32;
+    let tempElement = document.querySelector("#current-temperature");
+    tempElement.innerHTML = Math.round(tempF);
+}
+
+function displayTempC(event){
+    event.preventDefault();
+    let tempElement = document.querySelector("#current-temperature");
+    tempElement.innerHTML = Math.round(tempC);
+}
+
+let tempC = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", submitCity);
 
+let tempFLink = document.querySelector("#tempF-link");
+tempFLink.addEventListener("click", displayTempF);
 
+let tempCLink = document.querySelector("#tempC-link");
+tempCLink.addEventListener("click", displayTempC);
 
+search("London");
 
 

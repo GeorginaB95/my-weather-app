@@ -73,6 +73,23 @@ a {
   font-size: 15px;
 }
 
+.forecast-element {
+  text-align: center;
+}
+
+.forecast-day {
+  color: #997da9;
+  font-weight: bold;
+}
+
+.forecast-temp-high {
+  font-size: 15px;
+}
+.forecast-temp-low {
+  color: rgb(160, 115, 187);
+  font-size: 15px;
+}
+
 .footer {
   color: #8e6e9f;
   display: block;

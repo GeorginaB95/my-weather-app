@@ -56,6 +56,16 @@ li:first-letter {
   position: relative;
   top: -8px;
 }
+a {
+  color: rgb(25, 115, 175);
+  text-decoration: none;
+}
+
+#units .active {
+  color: #997da9;
+  cursor: default;
+  text-decoration: none;
+}
 
 .current-weather-details {
   list-style-type: none;
@@ -67,4 +77,8 @@ li:first-letter {
   color: #8e6e9f;
   display: block;
   text-align: center;
+}
+.code-link {
+  color: blue;
+  text-decoration: underline;
 }

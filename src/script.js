@@ -51,12 +51,16 @@ function displayTempF(event){
     let tempF = (tempC * 9) / 5 + 32;
     let tempElement = document.querySelector("#current-temperature");
     tempElement.innerHTML = Math.round(tempF);
+    tempCLink.classList.remove("active");
+    tempFLink.classList.add("active");
 }
 
 function displayTempC(event){
     event.preventDefault();
     let tempElement = document.querySelector("#current-temperature");
     tempElement.innerHTML = Math.round(tempC);
+    tempCLink.classList.add("active");
+    tempFLink.classList.remove("active");
 }
 
 let tempC = null;

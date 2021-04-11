@@ -14,14 +14,16 @@ body {
   margin-top: 40px;
 }
 
-#search-form {
+form {
   padding: 20px;
   text-align: center;
+  max-width: 600px;
 }
 
 .btn {
   background-color: #908be7;
   border: 1px solid whitesmoke;
+  margin-right: 2px;
 }
 
 .btn:hover {

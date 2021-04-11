@@ -113,6 +113,21 @@ function displayTempC(event){
     tempFLink.classList.remove("active");
 }
 
+function retrievePosition(position) {
+  console.log(position);
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiKey = "d8db460d456f3ec32826f6858578adce";
+  let units = "metric";
+  let apiLatUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+  axios.get(apiLatUrl).then(displayTemperature);
+}
+function getPosition(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(retrievePosition);
+}
+
+
 let tempC = null;
 
 let form = document.querySelector("#search-form");
@@ -124,6 +139,9 @@ tempFLink.addEventListener("click", displayTempF);
 let tempCLink = document.querySelector("#tempC-link");
 tempCLink.addEventListener("click", displayTempC);
 
+
+let currentButton = document.querySelector("#location-btn");
+currentButton.addEventListener("click", getPosition);
 
 search("London");
 displayForecast();

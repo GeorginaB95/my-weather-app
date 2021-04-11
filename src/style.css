@@ -12,6 +12,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
   margin-top: 40px;
+  padding-bottom: 15px;
 }
 
 form {
@@ -45,8 +46,8 @@ h1 {
   background-color: #958ee74d;
   border-radius: 80px;
   margin-right: 20px;
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 75px;
+  max-height: 75px;
 }
 
 ul {
@@ -106,9 +107,10 @@ a {
 .feelsLike {
   background: #8f8be6c5;
   border-radius: 10px;
+
   color: white;
   text-align: center;
-  margin: 0px 190px 0px 190px;
+  margin: 0px 190px 25px 190px;
   padding-top: 5px;
   padding-bottom: 5px;
 }

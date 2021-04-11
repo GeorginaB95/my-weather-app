@@ -1,13 +1,17 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #997da9;
+  background-image: url("file:///Users/georginabarnsley/Desktop/untitled%20folder/purple-sky.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background: cover;
+  background-size: 160%;
 }
 .my-weather-app {
-  background-color: #ffffff;
-  border: 1px solid #997da9;
+  background-color: #ffffffd3;
   border-radius: 10px;
   max-width: 600px;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 #search-form {
@@ -15,26 +19,40 @@ body {
   text-align: center;
 }
 
-#search-button {
-  padding-left: 50px;
+.btn {
+  background-color: #908be7;
+  border: 1px solid whitesmoke;
+}
+
+.btn:hover {
+  color: #908be7;
+  background-color: whitesmoke;
+  border: 1px solid #908be7;
 }
 
 h1 {
-  color: #28b5b5;
+  color: #8f8be6;
   font-size: 40px;
   margin-bottom: 0px;
-  margin-top: 0px;
+  margin-top: -10px;
+  text-align: center;
+  font-weight: bold;
   padding: 20px 30px 5px 30px;
 }
 .weather-icon {
-  margin-right: 5px;
+  background-color: #c499eb;
+  border-radius: 80px;
+  margin-right: 20px;
   max-width: 70px;
   max-height: 70px;
 }
 
 ul {
-  color: #d2e69c;
+  color: #c499eb;
+  font-weight: bold;
   list-style-type: none;
+  margin-top: 5px;
+  text-align: center;
 }
 
 li:first-letter {
@@ -42,16 +60,19 @@ li:first-letter {
 }
 
 #description {
-  font-weight: bold;
+  color: #8f8be6;
+  font-weight: bolder;
+  font-size: 15px;
 }
 
 .current-weather {
   color: #31326f;
-  margin-left: 30px;
+  margin-left: 60px;
 }
 
 #current-temperature {
   font-size: 40px;
+  font-weight: bold;
   line-height: 20px;
   position: relative;
   top: 10px;
@@ -62,7 +83,7 @@ li:first-letter {
   top: -8px;
 }
 a {
-  color: rgb(25, 115, 175);
+  color: rgb(138, 106, 199);
   text-decoration: none;
 }
 
@@ -76,31 +97,40 @@ a {
   list-style-type: none;
   color: #997da9;
   font-size: 15px;
+  margin-right: 50px;
 }
 
-.forecast-element {
+.weather-forecast {
   text-align: center;
+  background-color: #898ce8c4;
+  border: 0.5px solid #ffffffd3;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 600px;
 }
 
 .forecast-day {
-  color: #997da9;
-  font-weight: bold;
+  color: #f3f3f3;
+  font-weight: bolder;
 }
 
 .forecast-temp-high {
+  color: #f3f3f3;
   font-size: 15px;
+  font-weight: bold;
+  margin-right: 5px;
 }
 .forecast-temp-low {
-  color: rgb(160, 115, 187);
   font-size: 15px;
 }
 
 .footer {
-  color: #8e6e9f;
+  color: #5e4969;
   display: block;
   text-align: center;
 }
 .code-link {
-  color: blue;
+  color: rgb(248, 248, 248);
   text-decoration: underline;
 }

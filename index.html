@@ -12,6 +12,8 @@
     />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://kit.fontawesome.com/e9a3f79448.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
@@ -36,9 +38,6 @@
         <li> Last updated: 
           <span id="date"><span>
         </li>
-        <li id="description">
-          Clear
-        </li>
       </ul>
       <div class="row current-weather">
         <div class="col-6">
@@ -51,8 +50,8 @@
         </div>
         <div class="col-6">
             <ul class="current-weather-details">
-              <li>
-                Precipitation: 0%
+              <li id="description">
+                Clear
               </li>
               <li>
                 Humidity: 
@@ -65,6 +64,7 @@
             </ul>
           </div>
       </div>
+      <br>
       <div class="weather-forecast" id="forecast">
       </div>
       </div>

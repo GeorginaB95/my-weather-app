@@ -40,7 +40,7 @@ h1 {
   padding: 20px 30px 5px 30px;
 }
 .weather-icon {
-  background-color: #c499eb;
+  background-color: #958ee74d;
   border-radius: 80px;
   margin-right: 20px;
   max-width: 70px;
@@ -61,21 +61,21 @@ li:first-letter {
 
 #description {
   color: #8f8be6;
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 15px;
 }
 
 .current-weather {
-  color: #31326f;
-  margin-left: 60px;
+  color: #47316f;
+  margin-left: 50px;
 }
 
 #current-temperature {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 50px;
   position: relative;
-  top: 10px;
+  top: 20px;
 }
 
 #units {
@@ -98,6 +98,12 @@ a {
   color: #997da9;
   font-size: 15px;
   margin-right: 50px;
+  text-align: left;
+}
+
+#sun-times {
+  color: #c499eb;
+  text-align: center;
 }
 
 .weather-forecast {
